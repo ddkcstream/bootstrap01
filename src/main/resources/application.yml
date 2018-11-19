@@ -1,0 +1,13 @@
+server:
+  port: 8080
+# 模板配置
+spring:
+  thymeleaf:
+    cache: false # 这个开发配置为false，避免改了模板还要重启服务器
+    prefix: classpath:/templates/  # 这个是配置模板路径的，默认就是templates，可不用配置
+    check-template: true  # 这个可以不配置，检查模板位置
+    suffix: .html
+    encoding: utf-8
+    servlet:
+      content-type: text/html
+    mode: HTML
